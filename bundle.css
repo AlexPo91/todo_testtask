@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(-45deg,#22c1c3, #fdbb2d);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 479px) {
+  body{
+    width: 100vw;
+    height: 100%;
+  }
+}
+
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #4682B4; }
+::-webkit-scrollbar-track {  background-color: #4682B4;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #4682B4; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color:#4682B4;}
+::-webkit-resizer { background-color:#4682B4;}
+.App {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: rgba(192, 192, 192, 0.5);
+  width: 50vw;
+  height: 50vh;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 25px;
+}
+.controlApp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+@media  (max-width: 899px){
+  .controlApp{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .App{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    padding-top: 20px;
+  }
+}
+.formAddTask{
+    display: flex;
+    justify-content: center;
+}
+
+.formAddTask input[type='text']{
+    background-color: inherit;
+    border: inherit;
+    outline: none;
+    padding: 10px 5px;
+    border-bottom: 2px solid #4682B4;
+    border-radius: 40px;
+}
+.formAddTask input[type='text']:focus{
+    background-color: lavender;
+  transition: 0.7s;
+}
+
+@media (max-width: 899px){
+  .formAddTask{
+    padding-left: 34px;
+    margin: 10px 0;
+  }
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header .title {
+    font-weight: bold;
+    font-size: 22px;
+    color: #4682B4;
+    margin-bottom: 20px;
+}
+.header .subTitle{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 899px){
+    .header{
+      display: block;
+    }
+  }
+  
+.editItem {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.editItem input[type="text"]{
+    outline: none;
+    background-color: inherit;
+    border: inherit;
+    border-bottom: 2px solid #4682B4;
+    width: 80%;
+}
+.nameItem {
+    text-align: start;
+    width: 80%;
+    padding-left: 10px;
+}
+.todoListItem{
+    margin: 0.5em 0;
+}
+.controlBtn{
+    width: 20%;
+    text-align: end;
+}
+.completedNameItem{
+    text-decoration: line-through;
+}
+
+@media (max-width: 899px){
+    .nameItem{
+        width: 70%;
+    }
+    .controlBtn{
+        width: 30%;
+    }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 
+
+/*# sourceMappingURL=bundle.css.map*/
