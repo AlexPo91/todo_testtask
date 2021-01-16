@@ -1,12 +1,15 @@
 {
   "name": "todo",
+  "homepage": "http://AlexPo91.github.io/todo_testtask",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": ".\\node_modules\\.bin\\webpack-dev-server --progress --colors",
     "build": ".\\node_modules\\.bin\\webpack",
-    "test": ".\\node_modules\\.bin\\jest"
+    "test": ".\\node_modules\\.bin\\jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Alex Polyachinscky",
   "license": "ISC",
