@@ -35,6 +35,7 @@ const todoReducer = (state = initialState, action) => {
     case LOGOUT:
       return {
         ...state,
+        todos: [],
         id: null,
       };
     case GET_TODOS:

@@ -17,12 +17,12 @@ let currentValue;
 function handleChange() {
   const previousValue = currentValue;
   currentValue = store.getState().todo;
-  if (previousValue && localStorage.getItem('Todo_id') && currentValue.id) {
-    api.updateTodos(store.getState().todo.id, store.getState().todo.todos);
+  if (previousValue?.id && localStorage.getItem('Todo_id') && currentValue?.id) {
+    api.updateTodos(store.getState().todo.id, currentValue.todos);
   }
 }
 
-store.subscribe(handleChange);
+  store.subscribe(handleChange)
 
 window.store = store;
 export default store;
