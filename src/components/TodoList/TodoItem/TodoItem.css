@@ -1,0 +1,38 @@
+.editItem {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.editItem input[type="text"]{
+    outline: none;
+    background-color: inherit;
+    border: inherit;
+    border-bottom: 2px solid #4682B4;
+    width: 80%;
+}
+.nameItem {
+    text-align: start;
+    width: 80%;
+    padding-left: 10px;
+}
+.todoListItem{
+    margin: 0.5em 0;
+}
+.controlBtn{
+    width: 20%;
+    text-align: end;
+}
+.completedNameItem{
+    text-decoration: line-through;
+}
+
+@media (max-width: 899px){
+    .nameItem{
+        width: 70%;
+    }
+    .controlBtn{
+        width: 30%;
+    }
+}

@@ -1,0 +1,25 @@
+.formAddTask{
+    display: flex;
+    justify-content: center;
+}
+
+.formAddTask input[type='text']{
+    background-color: inherit;
+    border: inherit;
+    outline: none;
+    padding: 10px 5px;
+    border-bottom: 2px solid #4682B4;
+    border-radius: 40px;
+}
+.formAddTask input[type='text']:focus{
+    background-color: lavender;
+  transition: 0.7s;
+}
+
+@media (max-width: 899px){
+  .formAddTask{
+    padding-left: 34px;
+    margin: 10px 0;
+  }
+}
+
